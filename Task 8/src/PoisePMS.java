@@ -11,7 +11,7 @@ public class PoisePMS {
         // declare driver connection
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                    "root", "Mysql@123");
+                    "root", "MysSQL Password");
 
             System.out.println("Enter the project number: ");
             int projectNumber = Integer.parseInt(userI.nextLine());
@@ -96,7 +96,7 @@ public class PoisePMS {
         //create connection to mySql using driver manager
 
        try { Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                "root", "Mysql@123");
+                "root", "MysqPAssword");
 
         // create a connection statement to put through mysql
 
@@ -127,7 +127,7 @@ public class PoisePMS {
 
         try {//create connection to Mysql through Driver Manager
         Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                "root", "Mysql@123");
+                "root", "MysqlPassword");
         //Statement statement = connection.createStatement();
 
         // display all the projects by calling the viewall projects method for user to view from
@@ -395,7 +395,7 @@ public class PoisePMS {
         Scanner userI = new Scanner(System.in);
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                    "root", "Mysql@123");
+                    "root", "Mysqlpassword");
 
             System.out.println("Enter client's name ");
             String clientName = userI.nextLine();
@@ -445,7 +445,7 @@ public class PoisePMS {
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                    "root", "Mysql@123");
+                    "root", "MysqlPassword");
 
         System.out.println("Enter contractor's name ");
         String contractorName = userI.nextLine();
@@ -497,7 +497,7 @@ public class PoisePMS {
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                "root", "Mysql@123");
+                "root", "MysqlPassword");
 
         System.out.println("Enter architect name: ");
         String architectName = userI.nextLine();
@@ -547,7 +547,7 @@ public class PoisePMS {
     public static void viewArchitect(){
         try{
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                    "root", "Mysql@123");
+                    "root", "MysqlPassword");
 
         // create a connection statement to put through mysql
 
@@ -570,7 +570,7 @@ public class PoisePMS {
     public static void viewClient(){
         try{
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                    "root", "Mysql@123");
+                    "root", "MysqlPassword");
 
             // create a connection statement to put through mysql
 
@@ -593,7 +593,7 @@ public class PoisePMS {
     public static void viewContractor(){
         try{
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                    "root", "Mysql@123");
+                    "root", "MysqlPassword");
 
             // create a connection statement to put through mysql
 
@@ -619,7 +619,7 @@ public class PoisePMS {
         Scanner userI = new Scanner(System.in);
 
         try{ Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                            "root", "Mysql@123");
+                            "root", "MysqlPassword");
 
         // create a connection statement to connect the query with the driver
         Statement statement = connection.createStatement();
@@ -758,7 +758,7 @@ public class PoisePMS {
     public static void viewCompleted() {
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                "root", "Mysql@123");
+                "root", "MysqlPassword");
 
             Statement statement = connection.createStatement();
 
@@ -781,7 +781,7 @@ public class PoisePMS {
     public static void dueProjects(){
         LocalDate today = LocalDate.now();
        try { Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                "root", "Mysql@123");
+                "root", "MysqlPassword");
            
         Statement statement = connection.createStatement();
         
@@ -805,7 +805,7 @@ public class PoisePMS {
 
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/PoisePMS?useSSL=false",
-                    "root", "Mysql@123");
+                    "root", "MysqlPassword");
 
             Statement statement = connection.createStatement();
 
